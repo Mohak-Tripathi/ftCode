@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "websocket.h": "c",
+        "pca9548adwr.h": "c",
+        "stdlib.h": "c"
+    }
+}

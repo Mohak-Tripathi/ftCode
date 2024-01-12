@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAQ: Service</title>
+    
+    <link href="./mdb.min.css" rel="stylesheet"/>
+
+  
+  <link     rel="stylesheet" href="service.css"  />
+  <link     rel="stylesheet" href="style.css"  />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> </nav>
+    <div class=" container mt-4 mb-4 pb-1 admin-container" id="service-page" >
+       
+        <div class="text-center pt-5 pb-4 fst-italic opacity-99 sub-heading"> Quick buttons to start/stop service, service enable/disable on reboot, and reboot the device.
+        </div>
+
+        <div class="row mt-3 mb-5 me-2 ms-2 p-2">
+ 
+          
+  <div class="row mini-box mb-2 "> 
+    <div class="col-4 h5"> Calibration </div>
+    <div class="col-4"> 
+        <button type="button" id="caliberate-button" class="btn min-button btn-primary"> Calliberate</button>
+    </div>
+  </div>
+  <div class="row mini-box  mb-2"> 
+    <div class="col-4 h5"> Factory Reset</div>
+    <div class="col-4">
+        <button type="button" id="reset-button" class="btn min-button btn-primary"> Reset</button>
+    </div>
+  </div>
+  <div class="row mini-box  mb-2"> 
+    <div class="col-4 h5"> Reboot </div>
+    <div class="col-4">
+        <button type="button" id="reboot-button" class="btn min-button btn-primary"> Reboot</button>
+    </div>
+  </div>
+      
+     
+        </div>
+     
+        </div>
+
+
+    
+  <footer id="footer"> </footer>
+
+  <script defer src="./service.js"></script>
+    <script type="module">
+      import {Navbar} from './navbar.js';
+      let navbar=document.querySelector('.navbar');
+      navbar.innerHTML =Navbar()
+
+      
+  import {Footer} from './footer.js';
+  let footer=document.getElementById('footer');
+  footer.innerHTML = Footer()
+      </script>
+
+<script defer src="./userRole.js"></script>
+<script defer src="./logout.js"></script>
+
+</body>
+</html>

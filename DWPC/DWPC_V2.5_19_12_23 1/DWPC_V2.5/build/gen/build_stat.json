@@ -1,0 +1,6 @@
+{
+  "arch": "esp32",
+  "platform": "esp32",
+  "app_name": "DWPC_V2.5",
+  "build_time_ms": 63521
+}

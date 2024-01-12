@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAQ: Dashboard</title>
+
+<link href="./mdb.min.css" rel="stylesheet"/>
+
+
+<link     rel="stylesheet" href="dashboard.css"  />
+<link     rel="stylesheet" href="style.css"  />
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> </nav>
+  <h3 class="time-stamp"> Time-Stamp (<span id="last-time-stamp"> </span> )</h3>
+    <div class="container pt-5 mt-5 pb-5 mb-4 pb-1 admin-conatiner">
+
+
+    <div class="row col-12 nw-admin">
+
+        <div class="col-2 mt-1 mb-1">
+
+            <div class="card text-center">
+      
+                <p class="card-text mt-2">      
+          
+                  <img src="temperature.png" alt="">
+                 </p>
+                  <!-- <i class="fa-solid fa-temperature-half fa-3x"></i> -->
+                <div class="card-body">
+                  <h5 class="card-title" id="temperature-data">-</h5>
+                  <p class="card-text">Temperature (°c)</p>
+       
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" id="hello">00</div> -->
+              </div>
+        </div>
+   
+        <div class="col-2 mt-1 mb-1">
+
+            <div class="card text-center">
+                <p class="card-text mt-2">  
+                    <!-- <span class="material-symbols-outlined icon-size">
+                    co2
+                    </span>     -->
+                    <img src="carbondioxide.png" alt="">
+                   </p>
+                <!-- <div class="card-header">Featured</div> -->
+                <div class="card-body">
+                  <h5 class="card-title" id="co2-data">-</h5>
+                  <p class="card-text">CO2 (ppm)</p>
+
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+              </div>
+        </div>
+        <div class="col-2 mt-1 mb-1">
+
+          <div class="card text-center">
+              <!-- <div class="card-header">Featured</div> -->
+              <p class="card-text mt-2">  
+                <!-- <span class="material-symbols-outlined icon-size">
+                  airwave
+                  </span>  -->
+                  <img src="pmimage.png" alt="">
+                </p>
+              <div class="card-body">
+                <h5 class="card-title" id="PM1-data">-</h5>
+                <p class="card-text">PM1 (µg/m3)</p>
+     
+              </div>
+              <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+            </div>
+      </div>
+        <div class="col-2 mt-1 mb-1">
+         
+            <div class="card text-center">
+                <p class="card-text mt-2">  
+                  <!-- <span class="material-symbols-outlined icon-size">
+                  airwave
+                  </span>   -->
+                  <!-- <i class="fa-solid fa-smog fa-3x"></i>  -->
+                  <img src="pmimage1.png" alt="">
+                </p>
+                <!-- <div class="card-header">Featured</div> -->
+                <div class="card-body">
+                  <h5 class="card-title" id="PM2.5-data">-</h5>
+                  <p class="card-text">PM2.5 (µg/m3)</p>
+      
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+              </div>
+        </div>
+
+        <div class="col-2 mt-1 mb-1">
+         
+          <div class="card text-center">
+              <p class="card-text mt-2">  
+                <!-- <span class="material-symbols-outlined icon-size">
+                airwave
+                </span>   -->
+                <img src="pmimage2.png" alt="">
+                <!-- <i class="fa-solid fa-smog fa-3x"></i>  -->
+              </p>
+     
+              <div class="card-body">
+                <h5 class="card-title" id="PM4-data">-</h5>
+                <p class="card-text">PM4 (µg/m3)</p>
+    
+              </div>
+              <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+            </div>
+      </div>
+      <div class="col-2 mt-1 mb-1">
+
+        <div class="card text-center">
+            <p class="card-text mt-2">    
+              <!-- <span class="material-symbols-outlined icon-size">
+              airwave
+                </span>  -->
+                <img src="pmimage3.png" alt="">
+              </p>
+            <div class="card-body">
+              <h5 class="card-title" id="PM10-data">-</h5>
+              <p class="card-text">PM10 (µg/m3)</p>
+  
+            </div>
+            <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+          </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="row col-12 nw-admin">
+
+
+      <div class="col-2 mt-1 mb-1">
+        <div class="card text-center">
+            <p class="card-text mt-2">  
+              <!-- <span class="material-symbols-outlined   icon-size">
+                humidity_mid
+                </span>     -->
+                <img src="humidity.png" alt="">
+              </p>
+            <div class="card-body">
+              <h5 class="card-title" id="humidity-data">-</h5>
+              <p class="card-text">Humidity(%)</p>
+      
+            </div>
+    
+          </div>
+    </div>
+
+    <div class="col-2 mt-1 mb-1">
+
+      <div class="card text-center">
+     
+       
+              <p class="card-text mt-2">    
+             
+                  <img src="tvoc.png" alt="">
+                </p>
+                   <div class="card-body">
+            <h5 class="card-title" id="tvoc-data">-</h5>
+            <p class="card-text">TVOC (µg/m3)</p>
+
+          </div>
+
+        </div>
+  </div>
+
+  <div class="col-2 mt-1 mb-1">
+
+    <div class="card text-center">
+        <!-- <div class="card-header">Featured</div> -->
+  
+            <p class="card-text mt-2">   
+                <!-- <span class="material-symbols-outlined icon-size">
+                compress
+                </span> -->
+                <img src="pressure.png" alt="">
+              </p>
+              <div class="card-body">
+          <h5 class="card-title" id="pressure-data">-</h5>
+          <p class="card-text">Pressure (mbar)</p>
+
+        </div>
+        <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+      </div>
+</div>
+
+   
+
+
+ 
+
+      
+        <div class="col-2 mt-1 mb-1">
+
+            <div class="card text-center">
+      
+                <p class="card-text mt-2"> 
+                  <!-- <span class="material-symbols-outlined icon-size">
+                    tips_and_updates
+                    </span>  -->
+                    <img src="lux.png" alt="">
+                  </p>
+                <div class="card-body">
+                  <h5 class="card-title" id="lux-data">-</h5>
+                  <p class="card-text">Illuminance (Lx)</p>
+          
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+              </div>
+        </div>
+        <div class="col-2 mt-1 mb-1">
+
+            <div class="card text-center">
+                <!-- <div class="card-header">Featured</div> -->
+                <p class="card-text mt-2">   
+                   <!-- <span class="material-symbols-outlined icon-size">
+                  keyboard_voice
+                  </span> -->
+                  <img src="noise.png" alt="">
+                </p>
+                  <!-- <i class="fa-solid fa-bomb fa-3x"></i>  -->
+                <div class="card-body">
+                  <h5 class="card-title" id="noise-data">-</h5>
+                  <p class="card-text">Noise SPL(dbA) </p>
+
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+              </div>
+        </div>
+   
+        <div class="col-2 mt-1 mb-1">
+
+            <div class="card text-center">
+                <!-- <div class="card-header">Featured</div> -->
+              
+                    <p class="card-text mt-2">    
+                      <img src="formaldehyde.png" alt="">
+                       <!-- <span class="material-symbols-outlined icon-size">
+                        air_purifier_gen
+                        </span> -->
+                       </p>
+                       <div class="card-body">
+                  <h5 class="card-title" id="tvoc-data">-</h5>
+                  <p class="card-text"> HCHO (ppb)</p>
+      
+                </div>
+                <!-- <div class="card-footer text-muted real-time-data" >00</div> -->
+              </div>
+        </div>
+     
+
+
+
+    </div>
+
+
+      <div class="subheding-nav">      <h2>  WELL Building Standard Benchmark </h2>    </div>
+  
+
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-4 mb-4 p-2 nav-bar">
+  <!-- Container wrapper -->
+  <div class="container-nav">
+
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      
+
+      <div class="d-flex align-items-center navbar-nav">
+        <button type="button" id="temperature_button" class="btn btn-link px-3 me-2" onclick="showTable('temperature')">
+          Temperature
+        </button>
+        <button type="button" id="humidity_button" class="btn btn-link px-3 me-2" onclick="showTable('humidity')">
+          Rel Humidity
+        </button>
+
+        <button type="button" id="co2_button" class="btn btn-link px-3 me-2" onclick="showTable('co2')">
+          Co2
+        </button>
+        <button type="button" id="pm1_button" class="btn btn-link px-3 me-2" onclick="showTable('pm1')">
+          PM-1
+        </button>
+
+        <button type="button" id="pm2.5_button" class="btn btn-link px-3 me-2" onclick="showTable('pm2.5')">
+          PM-2.5
+        </button>
+        <button type="button" id="pm4_button" class="btn btn-link px-3 me-2" onclick="showTable('pm4')">
+          PM-4
+        </button>
+        <button type="button" id="pm10_button" class="btn btn-link px-3 me-2" onclick="showTable('pm10')">
+          PM-10
+        </button>
+        <button type="button" id="ambient_button" class="btn btn-link px-3 me-2" onclick="showTable('ambient')">
+          Ambient Light
+        </button>
+        <button type="button" id="noise_button" class="btn btn-link px-3 me-2" onclick="showTable('noise')">
+          Sound-Level
+        </button>
+        <button type="button" id="pressure_button" class="btn btn-link px-3 me-2" onclick="showTable('pressure')">
+          Air Pressure
+        </button>
+        <button type="button" id="tvoc_button" class="btn btn-link px-3 me-2" onclick="showTable('tvoc')">
+          TVOC
+        </button>
+        <button type="button" id="hcho_button" class="btn btn-link px-3 me-2" onclick="showTable('hcho')">
+          HCHO
+        </button>
+   
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<!-- <div id="chart-container"  class="mt-2">   
+  <canvas id="chart1" class="mt-4"></canvas>
+
+</div> -->
+
+
+
+
+<table id="tvoc-table" class="table hidden-table">
+    <thead>
+        <tr class="table-dark">
+            <th scope="col" class="font-bold">TVOC Level (ug/m3)</th>
+            <th scope="col" class="font-bold">TVOC Index Value</th>
+            <th scope="col" class="font-bold">Level of Concern</th>
+            <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+            <th scope="col" class="font-bold">Action Recommendation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-success">
+            <td scope="row">Less than 300</td>
+            <td>0</td>
+            <td>Low</td>
+            <td>No irritation or discomfort is expected.</td>
+            <td>1. Continue regular office operations and maintain good air quality practices. <br> 2. Regularly inspect and maintain HVAC systems to ensure optimal function.</td>
+        </tr>
+        <tr class="table-primary">
+            <td>300 to 500</td>
+            <td>1</td>
+            <td>Acceptable</td>
+            <td>Occasional irritation or discomfort may be possible with sensitive individuals.</td>
+            <td>1. Monitor sources of VOCs such as office equipment, cleaning agents, and building materials. <br> 2. Ensure sufficient ventilation, especially in areas with potential VOC sources.</td>
+        </tr>
+        <tr class="table-secondary">
+            <td>500 to 1000</td>
+            <td>2</td>
+            <td>Marginal</td>
+            <td>Complaints about irritation and discomfort are possible in sensitive individuals.</td>
+            <td>1. Increase ventilation in the affected areas. <br> 2. Identify and address specific VOC sources. <br> 3. Consider using air purifiers equipped with activated carbon filters to reduce VOC levels.</td>
+        </tr>
+        <tr class="table-warning">
+            <td>1000 to 3000</td>
+            <td>3</td>
+            <td>High</td>
+            <td>Irritation and discomfort may begin in general people.</td>
+            <td>1. Prioritize identifying and removing the sources of VOCs. <br> 2. Temporarily restrict access to areas with high TVOC levels until the situation is resolved. <br> 3. Increase air exchange rates and use air purifiers to rapidly reduce concentrations.</td>
+        </tr>
+        <tr class="table-danger">
+            <td>More than 3000</td>
+            <td>4</td>
+            <td>Very High</td>
+            <td>Irritation and discomfort begins in general people.</td>
+            <td>1. Immediately evacuate and restrict access to areas with extremely high TVOC levels. <br> 2. Engage environmental health experts to address the issue and provide specific interventions. <br>3. Thoroughly ventilate and possibly decontaminate the area before allowing reoccupation.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<!-- CO2 table -->
+<table id="co2-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">CO2 Lvl (PPM)</th>
+          <th scope="col" class="font-bold" >CO2 Indx Vl</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td>250-400</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Normal background concentration in outdoor ambient air</td>
+          <td>1. Maintain regular operations and HVAC system checks. <br> 2. Ensure HVAC systems are operating optimally.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>400-1,000</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Concentrations typical of occupied indoor spaces with good air exchange.</td>
+          <td>1. Regularly check the ventilation system for proper air exchange. <br> 2. Educate staff about the importance of taking breaks and stepping outside occasionally.</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>1,000-2,000</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Complaints of drowsiness and poor air</td>
+          <td>1. Increase ventilation rates in the building. <br> 2. Identify and address possible sources or areas of poor ventilation. <br> 3. Use plants known for improving indoor air quality.</td>
+      </tr>
+      <tr class="table-warning">
+          <td>2,000-5,000</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Headaches, sleepiness and stagnant, stale, stuffy air. Poor concentration, loss of attention, increased heart rate and slight nausea</td>
+          <td>1. Urgently address and improve ventilation systems. <br> 2. Consider using CO2 scrubbers or similar technologies if applicable. <br> 3. Encourage regular breaks for employees to get fresh air.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>>5,000</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Exposure may lead to serious oxygen deprivation resulting in permanent brain damage, coma and even death.
+          <td>1. Evacuate the area immediately. <br> 2. Consult a specialist to identify the source of the extreme CO2 concentration and address it urgently. <br> 3. Reoccupy the space only after thorough inspection and remediation.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<table id="pm2.5-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">PM2.5 Level (ug/m3)</th>
+          <th scope="col" class="font-bold">PM Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">0-15</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality posing little or no acute risk</td>
+          <td>1. Regularly maintain HVAC and air filtration systems. <br> 2. Avoid introduction of potential pollutants.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>15-25</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Moderate concerns in unusually susceptible individuals</td>
+          <td>1. Check and replace HVAC filters more frequently. <br> 2. Limit activities that generate PM (like certain office equipment or maintenance tasks).</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>25-35</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for susceptible groups (older adults with chronic heart or lung disease, children and asthmatics)</td>
+          <td>1. Install air purifiers in areas with high PM concentrations. <br> 2. Review and optimize building ventilation. <br> 3. Use entryway mats to reduce particulates from footwear.</td>
+      </tr>
+      <tr class="table-warning">
+          <td>35-50</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Unhealthy, General public may begin to experience health effects</td>
+          <td>1. Restrict outdoor air intake if outdoor PM levels are high. <br> 2. Seal off areas undergoing renovations or other activities producing PM. <br> 3. Regularly clean and vacuum using devices with HEPA filters.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>>50</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Unhealthy, General public begin to experience health effects</td>
+          <td>1. Consider temporarily shutting down the office or allowing remote work until levels decrease.  <br>2. Investigate sources of high PM levels and address them directly.<br> 3. Consult with an indoor air quality expert for more tailored solutions.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<table id="pm1-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">PM1.0 Level (µg/m³)</th>
+          <th scope="col" class="font-bold">PM Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">0-5</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality with minimal risk.</td>
+          <td>
+              1. Maintain regular air quality monitoring.<br>
+              2. Implement general air quality management practices.
+          </td>
+      </tr>
+      <tr class="table-primary">
+          <td>5-10</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Low concerns, particularly for sensitive individuals.</td>
+          <td>
+              1. Continue regular air quality monitoring.<br>
+              2. Consider targeted actions in areas with higher concentrations, such as improving ventilation or using air purifiers.
+          </td>
+      </tr>
+      <tr class="table-secondary">
+          <td>10-20</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for sensitive groups; general public not likely to be affected.</td>
+          <td>
+              1. Increase air quality monitoring frequency.<br>
+              2. Identify and address specific sources of PM1, such as combustion processes or indoor pollutants.<br>
+              3. Consider implementing ventilation improvements and air purification systems.
+          </td>
+      </tr>
+      <tr class="table-warning">
+          <td>20-35</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Unhealthy; general public may begin to experience health effects.</td>
+          <td>
+              1. Implement immediate actions to reduce PM1 concentrations, including targeted source control.<br>
+              2. Enhance ventilation systems and consider the use of high-efficiency air purifiers.<br>
+              3. Communicate health advisories and encourage sensitive individuals to take precautions.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>>35</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Health alert; everyone may begin to experience more serious health effects.</td>
+          <td>
+              1. Implement emergency measures to reduce exposure, such as relocating individuals from affected areas.<br>
+              2. Engage with local health authorities and consider temporary shutdowns or restrictions until air quality is improved.<br>
+              3. Investigate and address sources of elevated PM1 levels and implement long-term air quality management strategies.
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<table id="pm4-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">PM4.0 Level (µg/m³)</th>
+          <th scope="col" class="font-bold">PM Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">0-10</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality with minimal risk.</td>
+          <td>
+              1. Maintain regular air quality monitoring.<br>
+              2. Implement general air quality management practices.
+          </td>
+      </tr>
+      <tr class="table-primary">
+          <td>10-20</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Low concerns, particularly for sensitive individuals.</td>
+          <td>
+              1. Continue regular air quality monitoring.<br>
+              2. Consider targeted actions in areas with higher concentrations, such as improving ventilation or using air purifiers.
+          </td>
+      </tr>
+      <tr class="table-secondary">
+          <td>20-40</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for sensitive groups; the general public is not likely to be affected.</td>
+          <td>
+              1. Increase air quality monitoring frequency.<br>
+              2. Identify and address specific sources of PM4, such as combustion processes or indoor pollutants.<br>
+              3. Consider implementing ventilation improvements and air purification systems.
+          </td>
+      </tr>
+      <tr class="table-warning">
+          <td>40-60</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Unhealthy; the general public may begin to experience health effects.</td>
+          <td>
+              1. Implement immediate actions to reduce PM4 concentrations, including targeted source control.<br>
+              2. Enhance ventilation systems and consider the use of high-efficiency air purifiers.<br>
+              3. Communicate health advisories and encourage sensitive individuals to take precautions.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>>60</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Health alert; everyone may begin to experience more serious health effects.</td>
+          <td>
+              1. Implement emergency measures to reduce exposure, such as relocating individuals from affected areas.<br>
+              2. Engage with local health authorities and consider temporary shutdowns or restrictions until air quality is improved.<br>
+              3. Investigate and address sources of elevated PM4 levels and implement long-term air quality management strategies.
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<table id="pm10-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">PM10 Level (ug/m3)</th>
+          <th scope="col" class="font-bold">PM Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">0-25</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality posing little or no acute risk</td>
+          <td>1. Regularly maintain HVAC and air filtration systems. <br> 2. Avoid introduction of potential pollutants.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>25-50</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Moderate concerns in unusually susceptible individuals</td>
+          <td>1. Check and replace HVAC filters more frequently. <br> 2. Limit activities that generate PM (like certain office equipment or maintenance tasks).</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>50-75</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for susceptible groups (older adults with chronic heart or lung disease, children and asthmatics)</td>
+          <td>1. Install air purifiers in areas with high PM concentrations. <br> 2. Review and optimize building ventilation. <br> 3. Use entryway mats to reduce particulates from footwear.</td>
+      </tr>
+      <tr class="table-warning">
+          <td>75-100</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Unhealthy, General public may begin to experience health effects</td>
+          <td>1. Restrict outdoor air intake if outdoor PM levels are high. <br> 2. Seal off areas undergoing renovations or other activities producing PM.  <br>3. Regularly clean and vacuum using devices with HEPA filters.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>>100</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Unhealthy, General public begin to experience health effects</td>
+          <td>1. Consider temporarily shutting down the office or allowing remote work until levels decrease. <br> 2. Investigate sources of high PM levels and address them directly. <br> 3. Consult with an indoor air quality expert for more tailored solutions.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<table id="temperature-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">Temperature Level (⁰C)</th>
+          <th scope="col" class="font-bold">Comfort Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-secondary">
+          <td scope="row">&lt;18</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Too cold for most employees. Possible decrease in dexterity and increase in discomfort.</td>
+          <td>1. Check the HVAC system for potential issues such as malfunctioning thermostats, blocked vents, or inefficient heating elements. <br> 2. Increase heating to bring the temperature into a more acceptable range. If HVAC isn't effective, it may need repair or calibration. <br> 3. If certain areas are colder than others, inspect the HVAC system's distribution and airflow for imbalances. <br> 4. Check for drafts, poorly insulated windows, and doors that might be affecting the HVAC's ability to maintain temperatures.</td>
+      </tr>
+      <tr class="table-success">
+          <td>18-20</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Might be slightly cool for some employees.</td>
+          <td>1. Ensure heating systems are functional in colder seasons.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>20-24</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Ideal temperature for most office tasks and generally comfortable for most people.</td>
+          <td>1. Regularly monitor and maintain this temperature range. <br> 2. Address any localized issues (e.g., drafty windows or areas with direct sunlight).</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>24-28</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Slightly warm for some employees.</td>
+          <td>1. Ensure ventilation and cooling systems are operational. <br> 2. Offer localized fans or cooling solutions for those who feel warm.</td>
+      </tr>
+      <tr class="table-warning">
+          <td>28-32</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Comfort decreases, potential decrease in productivity.</td>
+          <td>1. Increase air circulation and consider bringing in additional cooling units. <br> 2. Recommend lighter clothing and ensure hydration stations are available. <br> 3. Consider temporary breaks to cooler areas if needed.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>&gt;32</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Heat stress possible, significant discomfort, and reduced productivity.</td>
+          <td>1. Implement heat stress protocols including regular breaks in cooler areas. <br> 2. Consider letting employees work remotely or re-scheduling work hours to cooler times of the day. <br> 3. Seek expert advice for long-term cooling solutions for the facility.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+<table id="humidity-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">Relative Humidity Level (%)</th>
+          <th scope="col" class="font-bold">Comfort Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-warning">
+          <td scope="row">&lt;30</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Dry air can lead to skin irritation, respiratory symptoms, and increased susceptibility to colds and respiratory infections. Electronic equipment may be at risk due to static electricity.</td>
+          <td>1. Use humidifiers to increase humidity levels. <br> 2. Regularly check HVAC settings to ensure they're not excessively removing moisture. <br> 3. Encourage employees to stay hydrated. <br> 4. Use anti-static sprays or other methods to manage static electricity.</td>
+      </tr>
+      <tr class="table-success">
+          <td>30-50</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Humidity in this range is generally considered comfortable and poses minimal risk to health or equipment.</td>
+          <td>1. Monitor and maintain this humidity range for optimal comfort. <br> 2. Regular HVAC maintenance to ensure consistent humidity levels.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>50-70</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Slightly elevated levels can lead to feelings of stuffiness and can encourage mold growth.</td>
+          <td>1. Consider using dehumidifiers in areas where humidity tends to be higher. <br> 2. Increase ventilation in areas prone to moisture accumulation. <br> 3. Check for any water leaks or sources of excess moisture and address them.</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>70-90</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>High risk of mold growth. Possible respiratory and skin irritation. Electronic equipment may malfunction.</td>
+          <td>1. Immediate use of dehumidifiers is essential.  <br> 2. Inspect for water leaks, poor ventilation, or other issues leading to excess moisture. <br> 3. Encourage employees to report any areas of mold or water accumulation. <br> 4. Seek a professional assessment if mold is found.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>&gt;90</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Extremely uncomfortable. Serious risk of mold growth, structural damage, and equipment malfunction.</td>
+          <td>1. Immediate action is required: deploy industrial dehumidifiers.  <br> 2. Limit occupancy of areas with extremely high humidity until resolved. <br> 3. Engage professionals to identify the root cause of the high humidity and rectify it. <br> 4. Inspect and repair any structural issues or leaks contributing to the problem.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<table id="ambient-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">Illumininance Level (Lux)</th>
+          <th scope="col" class="font-bold">Comfort Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-warning">
+          <td scope="row">&lt;100</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Too dim for most tasks, which can strain the eyes and lead to errors.</td>
+          <td>1. Increase lighting in the area, either by using brighter bulbs or adding more light fixtures. <br> 2. Consider relocating employees to well-lit areas for tasks requiring precision.  <br> 3. Use task lighting, like desk lamps, to provide focused light where needed.</td>
+      </tr>
+      <tr class="table-success">
+          <td>100-250</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Adequate for circulation areas and rooms where minimal visual tasks are performed.</td>
+          <td>1. Monitor to ensure this range is consistent. <br> 2. Consider task lighting or spot lighting for any intricate tasks.</td>
+      </tr>
+      <tr class="table-primary">
+          <td>250-500</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Ideal for general office work, computer tasks, and reading.</td>
+          <td>1. Maintain lighting fixtures and regularly replace aging or dimming bulbs. <br> 2. Ensure even distribution of light to avoid shadows or overly lit areas.</td>
+      </tr>
+      <tr class="table-secondary">
+          <td>500-1000</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Might be excessively bright for typical office tasks but suitable for detailed inspections.</td>
+          <td>1. Use dimmers or adjustable lighting fixtures to modulate brightness based on the task at hand. <br> 2. Ensure that lights don't create glare on screens or reflective surfaces. <br> 3. Adjustable shades or diffusers can be used to optimize lighting conditions.</td>
+      </tr>
+      <tr class="table-danger">
+          <td>&gt;1000</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Excessively bright. Can cause glare, discomfort, and visual fatigue. Not typical for regular office settings but can be used in scenarios requiring intense illumination, like surgery or detailed inspections.</td>
+          <td>1. Limit exposure durations to very high lux levels. <br> 2. Provide protective eyewear if the high lux level is required for specific tasks. <br> 3. Use shades, blinds, or diffusers to control natural light influx in areas where sunlight leads to excessive brightness.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<table id="pressure-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">Atmospheric Pressure (mbar)</th>
+          <th scope="col" class="font-bold">Comfort Index</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">&lt;980</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality with minimal risk.</td>
+          <td>
+              1. Maintain regular air quality monitoring.<br>
+              2. Implement general air quality management practices.
+          </td>
+      </tr>
+      <tr class="table-primary">
+          <td>980-1040</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Low concerns, particularly for sensitive individuals.</td>
+          <td>
+              1. Continue regular air quality monitoring.<br>
+              2. Consider targeted actions in areas with higher concentrations, such as improving ventilation or using air purifiers.
+          </td>
+      </tr>
+      <tr class="table-warning">
+          <td>&gt;1040</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for sensitive groups; general public not likely to be affected.</td>
+          <td>
+              1. Increase air quality monitoring frequency.<br>
+              2. Identify and address specific sources of PM1, such as combustion processes or indoor pollutants.<br>
+              3. Consider implementing ventilation improvements and air purification systems.
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+<table id="noise-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">Noise Level (dBA)</th>
+          <th scope="col" class="font-bold">Noise Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">&lt;45</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory noise level with minimal impact on concentration and well-being.</td>
+          <td>
+              1. Maintain a quiet and comfortable work environment.<br>
+              2. Encourage the use of headphones or quiet spaces for focused work.<br>
+              3. Ensure office equipment and HVAC systems operate at low noise levels.
+          </td>
+      </tr>
+      <tr class="table-primary">
+          <td>45 - 55</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Moderate noise levels that may be noticeable but generally do not cause disruption.</td>
+          <td>
+              1. Consider implementing sound-absorbing materials or partitions.<br>
+              2. Provide acoustic panels or ceiling tiles to reduce reverberation.<br>
+              3. Encourage the use of designated quiet zones for tasks requiring concentration.
+          </td>
+      </tr>
+      <tr class="table-warning">
+          <td>55 - 65</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Increased noise levels that may lead to decreased productivity and increased stress.</td>
+          <td>
+              1. Conduct a noise assessment to identify and address specific sources of high noise.<br>
+              2. Introduce noise-canceling technologies or white noise machines.<br>
+              3. Encourage the use of noise-canceling headphones for employees who need concentration.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>65 - 75</td>
+          <td>3</td>
+          <td>High</td>
+          <td>High noise levels that can lead to discomfort, reduced productivity, and potential health issues.</td>
+          <td>
+              1. Implement measures to reduce noise from equipment and machinery.<br>
+              2. Consider rearranging workspaces to minimize noise exposure.<br>
+              3. Provide quiet zones or soundproof rooms for tasks requiring intense concentration.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>&gt;75</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Very high noise levels that pose a risk of hearing damage and significant health issues.</td>
+          <td>
+              1. Implement engineering controls to reduce noise at the source.<br>
+              2. Provide hearing protection, such as earplugs or earmuffs, for employees in noisy areas.<br>
+              3. Conduct regular noise monitoring and employee training on hearing protection.
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+<table id="hcho-table" class="table hidden-table">
+  <thead>
+      <tr class="table-dark">
+          <th scope="col" class="font-bold">HCHO Level (ppb)</th>
+          <th scope="col" class="font-bold">HCHO Index Value</th>
+          <th scope="col" class="font-bold">Level of Concern</th>
+          <th scope="col" class="font-bold">Symptoms/Effects (8 hours Exposure)</th>
+          <th scope="col" class="font-bold">Action Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-success">
+          <td scope="row">&lt;20</td>
+          <td>0</td>
+          <td>Low</td>
+          <td>Satisfactory air quality with minimal risk.</td>
+          <td>
+              1. Maintain regular air quality monitoring.<br>
+              2. Implement general air quality management practices.<br>
+              3. Use formaldehyde-free building materials and products.
+          </td>
+      </tr>
+      <tr class="table-primary">
+          <td>20 - 50</td>
+          <td>1</td>
+          <td>Acceptable</td>
+          <td>Low concerns, particularly for sensitive individuals.</td>
+          <td>
+              1. Continue regular air quality monitoring.<br>
+              2. Identify and address specific sources of formaldehyde, such as furniture or building materials.<br>
+              3. Enhance ventilation in affected areas.
+          </td>
+      </tr>
+      <tr class="table-warning">
+          <td>50 - 100</td>
+          <td>2</td>
+          <td>Marginal</td>
+          <td>Unhealthy for sensitive groups; general public not likely to be affected.</td>
+          <td>
+              1. Increase air quality monitoring frequency.<br>
+              2. Implement source control measures, such as using low-emission products and materials.<br>
+              3. Improve ventilation systems in buildings, especially in areas with higher formaldehyde concentrations.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>100 - 150</td>
+          <td>3</td>
+          <td>High</td>
+          <td>Unhealthy; general public may begin to experience health effects.</td>
+          <td>
+              1. Implement immediate actions to reduce formaldehyde concentrations, including identifying and replacing sources of contamination.<br>
+              2. Enhance ventilation systems and consider the use of air purifiers with formaldehyde filters.<br>
+              3. Communicate health advisories and encourage sensitive individuals to take precautions.
+          </td>
+      </tr>
+      <tr class="table-danger">
+          <td>&gt;150</td>
+          <td>4</td>
+          <td>Very High</td>
+          <td>Health alert; everyone may begin to experience more serious health effects.</td>
+          <td>
+              1. Implement emergency measures to reduce formaldehyde exposure, such as evacuating affected areas.<br>
+              2. Engage with local health authorities and consider temporary shutdowns or restrictions until indoor air quality is improved.<br>
+              3. Investigate and address sources of elevated formaldehyde levels and implement long-term indoor air quality management strategies.
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+<footer id="footer"> </footer>
+
+
+    <script type="module">
+
+      import {Navbar} from './navbar.js';
+      let navbar=document.querySelector('.navbar');
+      navbar.innerHTML =Navbar()
+
+      
+  import {Footer} from './footer.js';
+  let footer=document.getElementById('footer');
+  footer.innerHTML = Footer()
+      </script>
+      <script defer src="dashboard.js"></script>
+
+      <script defer src="chart.min.js"></script>
+      <script defer src="./userRole.js"></script>
+<script defer src="./logout.js"></script>
+   
+    
+
+
+</body>
+</html>

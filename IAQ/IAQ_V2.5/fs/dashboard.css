@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.font-bold{
+  /* text-align: center; */
+  font-weight: 900;
+}
+
+
+.hidden-table {
+  display: none;
+}
+/* .admin-container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    width: 1000px;
+    border: 2px solid black
+
+  } */
+
+  /* .admin-conatiner1{
+width: 1650px
+  } */
+
+  .nw-admin{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px
+  }
+
+
+  .icon-size{
+    font-size: 50px;
+}
+
+
+.time-stamp{
+  text-align: center;
+  margin-top: 4%;
+  margin-left: -70px
+  
+}
+/* .box-shadow-class{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} */
+
+
+#chart-container {
+
+  display: flex;
+justify-content: center;
+align-items: center; /* Vertically center the contents */
+height: 40vh; /* Set the height of the container */
+/* width: 100%; */
+/* border: 2px solid black; */
+}
+
+
+.navbar-nav {
+
+  display: flex;
+  justify-content: center; /* Horizontally center the navbar items */
+  margin: auto;
+}
+
+
+.navbar-nav button {
+/* border: 2px solid red; */
+margin-left: 10px;
+margin-right: 10px;
+}
+
+
+
+.subheding-nav {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+
+}
+
+
+.underline_head{
+  /* font-weight: bolder; */
+  border: none;
+  color: #3B71CA;
+  text-decoration:underline;
+  margin-left: 10px;
+margin-right: 10px;
+}

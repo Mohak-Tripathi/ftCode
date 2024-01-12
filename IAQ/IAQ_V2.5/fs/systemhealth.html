@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAQ: health</title>
+
+     <!-- MDB -->
+  <link href="./mdb.min.css" rel="stylesheet"/>
+   
+    <link     rel="stylesheet" href="systemhealth.css"/>
+    <link     rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> </nav>
+
+    <div class=" container mt-4 mb-4 pb-1 admin-container" id="systemHealth-page" >
+    
+  <div class="systemHealthPage">
+    <div class="system-calls">
+      <ul>
+        <li><a href="#" onclick="executeCommandGetInfo()">Sys.GetInfo</a></li>
+    
+        <li><a href="#" onclick="executeCommandSetDebug()">Sys.SetDebug</a></li>
+        <li><a href="#" onclick="executeCommandCO2FC()">CO2 FC</a></li>
+    
+        <li><a href="#" onclick="executeCommandCO2ASCD()">CO2 ASC De-Activate</a></li>
+        <li><a href="#" onclick="executeCommandCO2ASCA()">CO2 ASC Activate</a></li>
+    
+        <li><a href="#" onclick="executeCommandSPSFC()">SPS Manual FC</a></li>
+        <li><a href="#" onclick="executeCommandMACWIFI()">ESP MAC-WIFI AND ETH</a></li>
+    
+        <li><a href="#" onclick="executeCommandSGP40()">SGP40 BIST</a></li>
+        <li><a href="#" onclick="executeCommandSoftReset()">Sensirion Soft Reset</a></li>
+    
+        <li><a href="#" onclick="executeCommandSPS()">SPS Device Status</a></li>
+        <li><a href="#" onclick="executeCommandSFA()">SFA Device Status</a></li>
+
+      </ul>
+    </div>
+    <div class="terminal" id="terminal">
+      <div class="terminal-output">
+        <!-- Command output will be appended here dynamically -->
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+    <footer id="footer"> </footer>
+
+    <script defer src="./systemhealth.js"></script>
+      <script type="module">
+        import {Navbar} from './navbar.js';
+        let navbar=document.querySelector('.navbar');
+        navbar.innerHTML =Navbar()
+  
+        
+    import {Footer} from './footer.js';
+    let footer=document.getElementById('footer');
+    footer.innerHTML = Footer()
+        </script>
+  
+  <script defer src="./userRole.js"></script>
+  <script defer src="./logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAQ: Inference</title>
+    
+
+  <link href="./mdb.min.css" rel="stylesheet"/>
+  <link     rel="stylesheet" href="inference.css"  />
+  <link     rel="stylesheet" href="style.css"  />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> </nav>
+    <div class="container mt-4 mb-4 pb-1 admin-container" id="inference-page">
+       
+        <div class="text-center pt-5 pb-4 fst-italic opacity-99 sub-heading"> Model input parameters for optimal performance during inference, should be configured by the production team before the product is shipped from the factory.
+        </div>
+
+        <div class="row mt-3 mb-5 me-2 ms-2 p-2">
+ 
+          
+            <form action="" id="inference-form">
+                <div class="row mb-3"> 
+                    <p class="text-primary"> IAQ Configuration </p>
+
+                    
+                    <p class="text-primary">Algorithm</p>
+                <div class="col-md-6 ">
+                    <p> Measurement Interval (10-60 sec)</p>
+                <div class="form">
+                    <input type="number" id="aggregation-interval" class="form-control form-control-sm"  value="" placeholder="Enter aggregation interval"/>
+
+                  </div>
+                </div>
+      
+    
+
+                <div class="col-md-6">
+                  <!-- border -->
+                  <p>Periodic Reset Interval (10-180 min)</p>
+                <div class="form">
+                  <input type="number" id="periodic-reset-interval" class="form-control form-control-sm" placeholder= "Enter Periodic Reset Interval"/>
+                  <!-- <label class="form-label" for="form1Example1">Email address</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3"> 
+              
+
+
+
+          <div class="col-md-6">
+
+            <p>  Publish Interval (1-30 min)</p>
+          <div class="form">
+            <input type="number" id="publish-interval" class="form-control form-control-sm" placeholder= "Enter Publish Interval"/>
+         
+          </div>
+        </div>
+
+        <div class="col-md-6">
+    
+          <p> Output Type</p>
+ 
+      <div>
+       
+  
+     <select id="output-type" class="w-50 p-1">
+      <option value="">Select</option>
+      <option value="0">Averaged</option>
+      <option value="1">Instantaneous</option>
+    </select>
+        </div>
+    
+      </div>
+
+
+
+      </div>
+
+            <div class="row mb-3"> 
+              <p class="text-primary">Offset/caliberation</p>
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>Temperature Offset (°c)</p>
+                <div class="form">
+                    <input type="number" id="temperature-offset" class="form-control form-control-sm" placeholder= "Enter Temperature Offset"/>
+                    <!-- <label class="form-label" for="form1Example1">text address</label> -->
+                  </div>
+                </div>
+      
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>Humidity Offset (%)</p>
+                  <div class="form">
+                    <input type="number" id="humidity-offset" class="form-control form-control-sm" placeholder= "Enter Humidity Offset"/>
+                    <!-- <label class="form-label" for="form1Example1">Email address</label> -->
+                  </div>
+                </div>
+            </div>
+                
+            <div class="row mb-3"> 
+                <!-- <p class="text-primary">Configure the User name and password</p> -->
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>Lx Offset</p>
+                <div class="form">
+                    <input type="number" id="lux-offset" class="form-control form-control-sm" placeholder="Enter Lux Offset"/>
+              
+                  </div>
+                </div>
+      
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p> CO2 Offset (ppm)</p>
+                  <div class="form">
+                    <input type="number" id="CO2-offset" class="form-control form-control-sm" placeholder="Enter CO2 Offset"/>
+
+                  </div>
+                </div>
+            </div>
+            <div class="row mb-3"> 
+      
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>PM 1 Offset (µg/m3)</p>
+                <div class="form">
+                    <input type="number" id="pm-1-offset" class="form-control form-control-sm" placeholder="Enter PM 1 Offset"/>
+              
+                  </div>
+                </div>
+      
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>PM 2.5 Offset (µg/m3)</p>
+                  <div class="form">
+                    <input type="number" id="pm-2.5-offset" class="form-control form-control-sm" placeholder="Enter PM 2.5 Offset"/>
+
+                  </div>
+                </div>
+            </div>
+
+            <div class="row mb-3"> 
+                <!-- <p class="text-primary">Configure the User name and password</p> -->
+                <div class="col-md-6">
+                    <!-- border -->
+                    <p>PM 4 Offset (µg/m3)</p>
+                <div class="form">
+                    <input type="number" id="pm-4-offset" class="form-control form-control-sm" placeholder="Enter PM 4 Offset"/>
+              
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <!-- border -->
+                  <p>PM 10 Offset (µg/m3)</p>
+                <div class="form">
+                  <input type="number" id="pm-10-offset" class="form-control form-control-sm" placeholder="Enter PM 10 Offset"/>
+
+                </div>
+              </div>
+      
+            
+            </div>
+            <div class="row mb-3"> 
+       
+              <div class="col-md-6">
+                  <!-- border -->
+                  <p>TVOC Offset (µg/m3) </p>
+              <div class="form">
+                  <input type="number" id="tvoc-reset" class="form-control form-control-sm" placeholder="Enter TVOC Offset"/>
+            
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <!-- border -->
+                <p>Noise Offset (dbA)</p>
+              <div class="form">
+                <input type="number" id="noise-reset" class="form-control form-control-sm" placeholder="Enter Noise Offset"/>
+
+              </div>
+            </div>
+    
+          
+          </div>
+          <div class="row mb-3"> 
+       
+            <div class="col-md-6">
+          
+                <p>CO2 callibration reference (ppm)</p>
+            <div class="form">
+                <input type="number" id="co2-cal-ref" class="form-control form-control-sm" placeholder="Enter CO2 cal reference"/>
+          
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+        
+              <p>Formaldehyde Offset (0-250 ppb)</p>
+            <div class="form">
+              <input type="number" id="formaldehyde-ref" class="form-control form-control-sm" placeholder="Enter formaldehyde reference"/>
+
+            </div>
+
+          </div>
+  
+        
+        </div>
+        <div class="row mb-3"> 
+       
+          <div class="col-md-6">
+        
+              <p>Fan AC Interval (days)</p>
+          <div class="form">
+              <input type="number" id="fan-ac-interval" class="form-control form-control-sm" placeholder="Enter Fan AC Interval"/>
+        
+            </div>
+          </div>
+          
+     
+          <div class="col-md-6">
+        
+            <p>Air Pressure Offset (0-65000 mbar)</p>
+        <div class="form">
+            <input type="number" id="air-pressure-offset" class="form-control form-control-sm" placeholder="Enter Air Pressure Offset"/>
+      
+          </div>
+        </div>
+      
+      </div>
+                <div style="display:flex; justify-content:flex-end">
+                    <button type="submit" class="btn bg-transparent bg-gradient text-primary border-margin">SAVE</button>
+                    <!-- <button type="button" id="inference-apply-button" class="btn bg-transparent bg-gradient text-primary border-margin">APPLY</button> -->
+                    </div>
+              
+
+            </form>
+      
+     
+        </div>
+     
+        </div>
+
+
+    
+  <footer id="footer"> </footer>
+
+  <script defer src="./inference.js"></script>
+    <script type="module">
+      import {Navbar} from './navbar.js';
+      let navbar=document.querySelector('.navbar');
+      navbar.innerHTML =Navbar()
+
+      
+  import {Footer} from './footer.js';
+  let footer=document.getElementById('footer');
+  footer.innerHTML = Footer()
+      </script>
+
+<script defer src="./userRole.js"></script>
+<script defer src="./logout.js"></script>
+
+</body>
+</html>
