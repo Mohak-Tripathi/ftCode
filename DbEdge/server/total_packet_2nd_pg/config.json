@@ -1,0 +1,53 @@
+{
+  "totalPacket": [
+    {
+      "bucket_name": "IAQ",
+      "total_Traffic": " ",
+      "Expected TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100000",
+      "Total TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "Gateway",
+      "total_Traffic": "",
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100020",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "PixelDesk",
+      "total_Traffic": " ",
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100030",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "DWPC",
+      "total_Traffic": 302070,
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100030",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "Range_Extender",
+      "total_Traffic": 136684,
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100080",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "RRH",
+      "total_Traffic": 135061,
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100089",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    },
+    {
+      "bucket_name": "PixelMR",
+      "total_Traffic": " ",
+      "Expected_TrafficColor": "hsl(6, 70%, 50%)",
+      "Expected_Traffic": "100045",
+      "Total_TrafficColor": "hsl(95, 70%, 50%)"
+    }
+  ]
+}

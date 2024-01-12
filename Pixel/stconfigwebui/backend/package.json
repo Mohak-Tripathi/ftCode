@@ -1,0 +1,21 @@
+{
+  "name": "desk-configuration",
+  "version": "1.0.0",
+  "description": "Desk Configuration App",
+  "main": "app.js",
+  "scripts": {
+    "app": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Prem",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jimp": "^0.16.1",
+    "multer": "^1.4.2",
+    "node-media-server": "^2.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

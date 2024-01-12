@@ -1,0 +1,37 @@
+[
+  {
+    "Bucket": "IAQ",
+    "Alive": "--",
+    "Total": 0
+  },
+  {
+    "Bucket": "PixelDesk",
+    "Alive": 3997,
+    "Total": 2000
+  },
+  {
+    "Bucket": "PixelMR",
+    "Alive": 1500,
+    "Total": 1500
+  },
+  {
+    "Bucket": "DWPC",
+    "Alive": 500,
+    "Total": 500
+  },
+  {
+    "Bucket": "Gateway",
+    "Alive": 0,
+    "Total": 6
+  },
+  {
+    "Bucket": "RangeExtender",
+    "Alive": 50,
+    "Total": 0
+  },
+  {
+    "Bucket": "RRH",
+    "Alive": 250,
+    "Total": 250
+  }
+]

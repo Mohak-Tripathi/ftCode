@@ -1,0 +1,103 @@
+{
+    "mqtt": {
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "mqttstatus": "Connected",
+        "clientid": "",
+        "ca": "mqtt.crt",
+        "topic": "/pixel/1",
+        "health_topic": "/health/1",
+        "mqtt_user_name": "",
+        "mqtt_password": "",
+        "response_topic": "",
+        "qos": "0"
+    },
+    "ota": "ota.zip",
+    "mqtt_two": {
+        "broker": "164.52.192.98",
+        "port": 1883,
+        "mqttstatus": "Connected",
+        "clientid": "",
+        "ca": "mqtt.crt",
+        "topic": "/pixel/2",
+        "health_topic": "/health/2",
+        "mqtt_user_name": "",
+        "mqtt_password": "",
+        "response_topic": "",
+        "qos": "0"
+    },
+    "inference": {
+        "overlap_threshold": 21,
+        "confidence_threshold": 0.1,
+        "resolution": {
+            "width": 1080,
+            "height": 1920
+        },
+        "people_count_degree": 270,
+        "model_input_resolution": 448,
+        "iou_threshold": 0.5,
+        "sleep_time": 9,
+        "periodic_interval": 10,
+        "iteration_count": 5
+    },
+    "sensor": {
+        "mode": 2
+    },
+    "command": "Memory info",
+    "credentials": [
+        {
+            "app_user": "Production_User",
+            "app_password": "e8d7304bc94c6e24efc7300bd429b82a",
+            "role": "Production"
+        },
+        {
+            "app_user": "Support_User",
+            "app_password": "54e6ac3d24ea6070ffebea3044aa187b",
+            "role": "Support"
+        },
+        {
+            "app_user": "Demo_User",
+            "app_password": "ce1445554e826c92d72cda8a81e35f52",
+            "role": "Demo"
+        }
+    ],
+    "network_information": {
+        "wifi_cred_ssid": "FTDEMO",
+        "wifi_cred_pass": "1234567890",
+        "static_ip": "",
+        "static_ip_gateway": "",
+        "ntp_server": "time.google.com",
+        "netmask": ""
+    },
+    "admin": {
+        "ap_mode_ssid": "PS_VERSION_2_5",
+        "ap_mode_ssid_pass": "09876543210",
+        "ssh_status": "enabled",
+        "variant": "MQTT",
+        "wifi_status": "disabled",
+        "vnc_status": "enabled",
+        "version": "1.0"
+    },
+    "dashboard": {
+        "people_count": 0,
+        "desk_occupancy": 50,
+        "time_stamp": 1704714365077
+    },
+    "services": {
+        "desk_occupancy": {
+            "label": "start"
+        },
+        "people_count": {
+            "label": "disable"
+        },
+        "occupancy_count": {
+            "label": "disable"
+        },
+        "analyzer": {
+            "label": "stop"
+        },
+        "config": {
+            "label": "stop"
+        }
+    }
+}

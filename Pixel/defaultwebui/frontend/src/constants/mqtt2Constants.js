@@ -1,0 +1,55 @@
+
+
+/*........................
+
+Copyright (c) 2022, FlamencoTech India Pvt. Ltd.
+All rights reserved.
+
+file:  mqtt2Constants.jsx
+
+Brief:  It contains Constants related to mqtt2 page. 
+
+Project: Pixel Sensor
+
+Release version: version 1.0.0
+
+Release Date: Dec 14, 2022
+
+Auther: Mohak Tripathi
+
+Whats New: Everything.
+ ..........................*/
+
+
+ export const MQTT_TWO_SAVEDATA_REQUEST =  "MQTT_TWO_SAVEDATA_REQUEST"
+ export const MQTT_TWO_SAVEDATA_SUCCESS = "MQTT_TWO_SAVEDATA_SUCCESS"
+ export const MQTT_TWO_SAVEDATA_FAIL = "MQTT_TWO_SAVEDATA_FAIL"
+
+
+ export const MQTT_TWO_REGISTER_REQUEST =  "MQTT_TWO_REGISTER_REQUEST"
+ export const MQTT_TWO_REGISTER_SUCCESS = "MQTT_TWO_REGISTER_SUCCESS"
+ export const MQTT_TWO_REGISTER_FAIL = "MQTT_TWO_REGISTER_FAIL"
+ export const CLEAR_ERRORS_MQTT_TWO = "CLEAR_ERRORS_MQTT_TWO"
+ export const CLEAR_SUCCESS_MQTT_TWO = 'CLEAR_SUCCESS_MQTT_TWO'
+
+
+ 
+ export const MQTT_TWO_CERT_REQUEST =  "MQTT_TWO_CERT_REQUEST"
+ export const MQTT_TWO_CERT_SUCCESS = "MQTT_TWO_CERT_SUCCESS"
+ export const MQTT_TWO_CERT_FAIL = "MQTT_TWO_CERT_FAIL"
+ export const CLEAR_ERRORS_MQTT_TWO_CERT = "CLEAR_ERRORS_MQTT_TWO_CERT"
+ export const CLEAR_SUCCESS_MQTT_TWO_CERT = "CLEAR_SUCCESS_MQTT_TWO_CERT"
+ 
+ export const GET_MQTT_TWO_CERT_REQUEST =  "GET_MQTT_TWO_CERT_REQUEST"
+ export const GET_MQTT_TWO_CERT_SUCCESS = "GET_MQTT_TWO_CERT_SUCCESS"
+ export const GET_MQTT_TWO_CERT_FAIL = "GET_MQTT_TWO_CERT_FAIL"
+ export const CLEAR_ERRORS_GET_MQTT_TWO_CERT = "CLEAR_ERRORS_GET_MQTT_TWO_CERT"
+
+ 
+ export const MQTT_TWO_APPLY_REQUEST =  "MQTT_TWO_APPLY_REQUEST"
+ export const MQTT_TWO_APPLY_SUCCESS = "MQTT_TWO_APPLY_SUCCESS"
+ export const MQTT_TWO_APPLY_FAIL ="MQTT_TWO_APPLY_FAIL"
+ 
+ export const CLEAR_ERRORS_APPLY_MQTT_TWO = "CLEAR_ERRORS_APPLY_MQTT_TWO"
+ export const CLEAR_SUCCESS_APPLY_MQTT_TWO = 'CLEAR_SUCCESS_APPLY_MQTT_TWO'
+ 
